@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Managment</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome  CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (Fixed) -->
+            <nav class="sidebar d-flex flex-column">
+                <div class="logo mb-4">
+                    <a href="home.html"><img src="logo.jpg" alt="Logo" class="logo-img">
+
+                    </a>
+                    <h4>Aurevia.io</h4>
+                </div>
+                <div class="search mb-4">
+                    <i></i>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <ul class="nav flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-folder-open"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-layer-group"></i>
+                            Product Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="oders.html" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-truck"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="leads.html" class="nav-link active">
+                            <i id="icon" class="fa-regular fa-user"></i>
+                            Leads
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-auto">
+                    <div class="notifications mb-4">
+                        <a href="#" class="nav-link d-flex justify-content-between align-items-center">
+                            <span><i id="icon" class="fa-regular fa-bell"></i>
+                                Notifications
+                            </span>
+                            <span class="badge bg-success"> 10</span>
+                        </a>
+                    </div>
+                    <div class="settings mb-4">
+                        <a href="#" class="nav-link"><i id="icon" class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+                    </div>
+                    <div class="profile d-flex align-items-center">
+                        <img src="Dipesh.jpg" alt="Profile" class="profile-img me-2">
+                        <div>
+                            <p class="mb-0">Dipesh Mahato</p>
+                            <small>dm@31.com</small>
+                        </div>
+                        <i id="icon-a" class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content (Scrollable) -->
+            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 content-area">
+                <div class="content-wrapper">
+                    <h1 class="mb-4">Add Product</h1>
+                    <div class="row">
+                        <!-- Left Section -->
+                        <div class="col-lg-8">
+                            <!-- Title -->
+                            <div class="mb-3">
+                                <label for="title" class="form-label">
+                                    <h5>Title</h5>
+                                </label>
+                                <input type="text" class="form-control" id="title" placeholder="Short sleeve t-shirt">
+                            </div>
+                            <!-- Description -->
+                            <div class="mb-3">
+                                <label for="description" class="form-label">
+                                    <h5>Description</h5>
+                                </label>
+                                <div class="description-container">
+                                    <!-- Toolbar -->
+                                    <div class="toolbar d-flex align-items-center p-2">
+                                        <button class="btn btn-light btn-sm me-2" title="Bold"><b>B</b></button>
+                                        <button class="btn btn-light btn-sm me-2" title="Italic"><i>I</i></button>
+                                        <button class="btn btn-light btn-sm me-2" title="Underline"><u>U</u></button>
+                                        <button class="btn btn-light btn-sm me-2" title="Text Color"><span
+                                                style="color: red;">A</span></button>
+                                        <button class="btn btn-light btn-sm me-2"
+                                            title="Bullet List">&#8226;&#8226;&#8226;</button>
+                                        <button class="btn btn-light btn-sm" title="Code">&lt;/&gt;</button>
+                                    </div>
+                                    <!-- Editable Text Area -->
+                                    <div id="description" class="form-control" contenteditable="true"
+                                        style="min-height: 150px;"></div>
+                                </div>
+                            </div>
+                            <!-- Media -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <h5>Media</h5>
+                                </label>
+                                <div class="upload-box text-center p-4 border rounded">
+                                    <p>Click to upload or drag and drop</p>
+                                    <p class="text-muted">SVG, PNG, JPG or GIF (max. 800x400px)</p>
+                                </div>
+                            </div>
+                            <!-- Category -->
+                            <div class="mb-3">
+                                <label for="category" class="form-label">
+                                    <h5>Category</h5>
+                                </label>
+                                <input type="text" class="form-control" id="category"
+                                    placeholder="Determines tax rates...">
+                            </div>
+                            <!-- Pricing -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <h5>Pricing</h5>
+                                </label>
+                                <div class="d-flex gap-3">
+                                    <input type="text" class="form-control" placeholder="Cost per item">
+                                    <input type="text" class="form-control" placeholder="Compare-at price">
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input type="checkbox" class="form-check-input" id="chargeTax">
+                                    <label class="form-check-label" for="chargeTax">Charge tax on this
+                                        product</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="col-lg-4">
+                            <!-- Status -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <h5>Status</h5>
+                                </label>
+                                <select class="form-select">
+                                    <option selected>Active</option>
+                                    <option value="1">Inactive</option>
+                                </select>
+                            </div>
+                            <!-- Product Organization -->
+                            <div class="mb-3">
+                                <h5>Product Organization</h5>
+                                <label for="productType" class="form-label">Product Type</label>
+                                <input type="text" class="form-control mb-2" id="productType">
+                                <label for="vendor" class="form-label">Vendor</label>
+                                <input type="text" class="form-control mb-2" id="vendor">
+                                <label for="collections" class="form-label">Collections</label>
+                                <input type="text" class="form-control mb-2" id="collections">
+                                <label for="tags" class="form-label">Tags</label>
+                                <input type="text" class="form-control" id="tags">
+                            </div>
+                            <!-- Search Engine Listing -->
+                            <div>
+                                <h5>Search Engine Listing</h5>
+                                <p>Add a title and description to see how this product might appear in a search
+                                    engine listing.</p>
+                                <button class="btn btn-link p-0">+ Add title and description</button>
+                            </div>
+                        </div>
+
+                        <!-- <form> -->
+                        <!-- Cost -->
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <label for="costPerItem" class="form-label">
+                                    <h5>Cost per item</h5>
+                                </label>
+                                <input type="number" class="form-control" id="costPerItem" placeholder="--">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="profit" class="form-label">
+                                    <h5>Profit</h5>
+                                </label>
+                                <input type="text" class="form-control" id="profit" placeholder="--">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="margin" class="form-label">
+                                    <h5>Margin</h5>
+                                </label>
+                                <input type="text" class="form-control" id="margin" placeholder="--">
+                            </div>
+                        </div>
+                        <!-- Shipping -->
+                        <div class="mb-4">
+                            <label for="shipping" class="form-label">
+                                <h5>Shipping</h5>
+                            </label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chargeTax">
+                                <label class="form-check-label" for="chargeTax">Charge tax on this
+                                    product</label>
+                            </div>
+                        </div>
+                        <!-- Weight -->
+                        <div class="mb-3 col-lg-8">
+                            <label for="weight" class="form-label">
+                                <h5>Weight</h5>
+                            </label>
+                            <input type="number" class="form-control" id="weight" placeholder="0.00">
+                            <small class="text-muted">
+                                Determines tax rates and adds metafields to improve search, filters, and
+                                cross-channel sales.
+                            </small>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-link p-0" id="addCustomInfo">+ Add Custom
+                                Information</button>
+                        </div>
+
+
+                        <!-- Inventory  -->
+                        <h5>Inventory</h5>
+                        <div class="mb-3">
+                            <input class="form-check-input" type="checkbox" id="trackQuantity" checked>
+                            <label class="form-check-label" for="trackQuantity">Track Quantity</label>
+                        </div>
+                        <div class="mb-3 col-lg-8">
+                            <input type="text" class="form-control" placeholder="--">
+                        </div>
+
+                        <!-- Shop Location  -->
+
+                        <div class=" mb-3">
+                            <h5>Shop Location</h5>
+                            <input class="form-check-input" type="checkbox" id="continueSelling">
+                            <label class="form-check-label" for="continueSelling">
+                                Continue selling when out of stock
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="skuBarcode">
+                            <label class="form-check-label" for="skuBarcode">This product has a SKU or
+                                barcode</label>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-light me-2" id="cancel">Cancel</button>
+                            <button type="submit" class="btn btn-success" id="save">Save</button>
+                        </div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </main>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome  CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (Fixed) -->
+            <nav class="sidebar d-flex flex-column">
+                <div class="logo mb-4">
+                    <a href="home.html"><img src="logo.jpg" alt="Logo" class="logo-img">
+
+                    </a>
+                    <h4>Aurevia.io</h4>
+                </div>
+                <div class="search mb-4">
+                    <i></i>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <ul class="nav flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-folder-open"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-layer-group"></i>
+                            Product Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="oders.html" class="nav-link active">
+                            <i id="icon" class="fa-solid fa-truck"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="leads.html" class="nav-link active">
+                            <i id="icon" class="fa-regular fa-user"></i>
+                            Leads
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-auto">
+                    <div class="notifications mb-4">
+                        <a href="#" class="nav-link d-flex justify-content-between align-items-center">
+                            <span><i id="icon" class="fa-regular fa-bell"></i>
+                                Notifications
+                            </span>
+                            <span class="badge bg-success"> 10</span>
+                        </a>
+                    </div>
+                    <div class="settings mb-4">
+                        <a href="#" class="nav-link"><i id="icon" class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+                    </div>
+                    <div class="profile d-flex align-items-center">
+                        <img src="Dipesh.jpg" alt="Profile" class="profile-img me-2">
+                        <div>
+                            <p class="mb-0">Dipesh Mahato</p>
+                            <small>dm@31.com</small>
+                        </div>
+                        <i id="icon-a" class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Main Content Placeholder -->
+            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 content-area">
+                <div class="content-wrapper">
+                    <h1 class="mb-4">Welcome to Aurevia.io <br> Click on Product Management</h1>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
