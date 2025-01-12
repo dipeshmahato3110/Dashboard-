@@ -21,3 +21,4 @@ document.getElementById("cancel").addEventListener("click", function () {
 document.getElementById("save").addEventListener("click", function () {
     alert("Save product detials ");
 });
+
